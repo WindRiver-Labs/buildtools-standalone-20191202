@@ -1,0 +1,122 @@
+Build Configuration:
+WRLINUX_VERSION      = "10.19.45.2"
+WRLINUX_BRANCH       = "Base"
+BB_VERSION           = "1.43.2"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "ubuntu-16.04"
+DISTRO               = "wrlinux"
+DISTRO_VERSION       = "10.19.45.2"
+MACHINE              = "qemux86-64"
+DEFAULTTUNE          = "core2-64"
+TARGET_SYS           = "x86_64-wrs-linux"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+lib32:  TARGET_SYS        = "x86_64-wrsmllib32-linux"
+lib32:  TUNE_FEATURES     = "m32 core2"
+wrlinux              
+wrlinux-distro       = "master-wr:e2a7e1b742672a92ecf53d48464184cbb621b0ca"
+meta                 = "wr-10.19-20191106:714d96ed68d0026e635bc765bd6a4381d97844d0"
+meta-initramfs       
+meta-xfce            
+meta-oe              
+meta-filesystems     
+meta-webserver       
+meta-networking      
+meta-python          
+meta-perl            
+meta-gnome           
+meta-multimedia      = "wr-10.19-20191106:de6a4e700fa41287481df90cda7f35af803755cd"
+meta-security        = "wr-10.19-20191106:7fd959d17e78dc84522db8e9fbfe15bac347341b"
+meta-selinux         = "wr-10.19-20191106:f08ed52ebbf95d2f2d952b54bb8b9a88a672a707"
+intel-x86            = "WRLINUX_10_19_BASE:83f2c5e0f6e775a8669931052464fe4fcb668096"
+meta-virtualization  = "wr-10.19-20191106:2617d59c2dd9e520db4c2db8a82a1769bb2a7956"
+meta-realtime        = "wr-10.19-20191106:adb18b84302475cffdf280f9da3cccbcb3a4ff8a"
+meta-mingw           = "wr-10.19-20191106:0daf3ca704758a16475588cfb063afe1b4c0e32e"
+wr-template          = "WRLINUX_10_19_BASE:a19a8fb456b0e70d068183cb0837c31f456b46b3"
+meta-yocto-bsp       
+meta-poky            = "wr-10.19-20191106:631f2a9399dbb7fa0351915c411cfafdcb9b4613"
+xilinx-zynqmp        = "WRLINUX_10_19_BASE:a6e72458c092f39e7e1f06a5f45f2206fc50ecbc"
+xilinx-zynq          = "WRLINUX_10_19_BASE:6825efa825c5014fd5b4aa20c1bac0eef26d4e83"
+meta-gplv2           = "wr-10.19-20191106:fc56f8409e0a361739eee9cd64d110773d39b0a2"
+intel-socfpga        = "WRLINUX_10_19_BASE:4d25ff6ba540fb961937506fc5400c2fbedf2236"
+meta-efi-secure-boot 
+meta-encrypted-storage 
+meta-integrity       
+meta-signing-key     = "wr-10.19-20191106:b4ce3c4cfc06e8fcdf2a653ff8621596e201b0f9"
+meta-cloud-services  = "wr-10.19-20191106:c1b1c5371818ee92613ad326f9602eefdaac5649"
+bcm-2xxx-rpi         = "WRLINUX_10_19_BASE:3e11a4b6ea57ce2811d98d3e79dd400dcd299ca3"
+meta                 
+meta-ids             
+meta-tpm             
+meta-tpm2            = "wr-10.19-20191106:b4ce3c4cfc06e8fcdf2a653ff8621596e201b0f9"
+meta-openstack       
+meta-openstack-aio-deploy 
+meta-openstack-compute-deploy 
+meta-openstack-compute-test-config 
+meta-openstack-controller-deploy 
+meta-openstack-controller-test-config 
+meta-openstack-qemu  
+meta-openstack-swift-deploy = "wr-10.19-20191106:c1b1c5371818ee92613ad326f9602eefdaac5649"
+meta-intel           = "wr-10.19-20191106:c685e7f9f66fcb57bd0f2da1f87cbbae9f37c5ad"
+wrlinux-ovp          = "master-wr:e2a7e1b742672a92ecf53d48464184cbb621b0ca"
+meta-cgl-common      = "wr-10.19-20191106:3fad980bee902f99eeb0aeaa3cd8c39d144ad1ef"
+wrlinux-cgl          = "master-wr:e2a7e1b742672a92ecf53d48464184cbb621b0ca"
+meta-dpdk            = "wr-10.19-20191106:3b3be49693f67b0c81c994562433594914dbf3c5"
+meta-intel-qat       = "wr-10.19-20191106:c32f1950322b338765e42ef43d1aa1b4b3c90321"
+ti-am335x            = "WRLINUX_10_19_BASE:4ced83c7a6fffbfd643729b25beb36d9aca470be"
+nxp-ls20xx           = "WRLINUX_10_19_BASE:69a340cb1ec43fd7aa77db0c933244a3d84410b3"
+meta-anaconda        = "wr-10.19-20191106:f7820be5fdb19365cb8798ff2c21902b2c753e99"
+meta-overc           
+meta-cube            = "wr-10.19-20191106:ce7ea09ae53b18b8864f1632895059aefbc0b51c"
+meta-iot-cloud       = "wr-10.19-20191106:4739416793f32ad2464758826caf43d7d5862b82"
+wrlinux-overc        = "master-wr:e2a7e1b742672a92ecf53d48464184cbb621b0ca"
+wrlinux-overc-cfg    = "WRLINUX_10_19_LTS:5ea4afced06c2cc76f2d0550389aa03fd69edaa6"
+wr-ostree            = "WRLINUX_10_19_BASE:4a90366f02865a3670ca5c9871a6bbbd20a70a7e"
+marvell-cn9xxx       = "WRLINUX_10_19_BASE:ac0a2eb464d71e218658cb4a0f590f087a18ba63"
+meta-openssl102      = "wr-10.19-20191106:a4d5d19cd7a6182658b132eab7a35cec2b591490"
+meta-openssl102-fips = "wr-10.19-20191106:66c43414862ca0552cb2886bdc0b6b7ae34de8d9"
+renesas-rcar         = "WRLINUX_10_19_BASE:19248f450796e3197adf34adbae0043fd9243f83"
+meta-security-compliance = "wr-10.19-20191106:7fd959d17e78dc84522db8e9fbfe15bac347341b"
+meta-selinux-dl      = "WRLINUX_10_19_BASE:80153c9a360fdc56663ccfc31bf9b4e4423f9657"
+meta-mingw-dl        = "WRLINUX_10_19_BASE:846fb60d98a34ef6d821f61fa8413657751f1820"
+meta-security-dl     = "WRLINUX_10_19_BASE:2fbfe4d9ee86572c24f13d18dc54c28bafbdbac1"
+meta-efi-secure-boot-dl = "WRLINUX_10_19_BASE:df47ec872874ca9d0880d83a9f62486d49139fd5"
+meta-encrypted-storage-dl = "WRLINUX_10_19_BASE:12de6be1f0d5a2746dbffdd88010a869c49318ca"
+meta-integrity-dl    = "WRLINUX_10_19_BASE:b9ba12421f67fefbac063523900bc3c505ae26e4"
+meta-ids-dl          = "WRLINUX_10_19_BASE:d006637abc000f6f5e3c1a2ff6b773847d8eb5c5"
+meta-tpm2-dl         = "WRLINUX_10_19_BASE:ef44c221ac6b1d92bf941995a9654cad05d3f293"
+wrlinux-dl           = "WRLINUX_10_19_BASE:f0b888094e596b891cbbab196ca657562e27a576"
+meta-tpm-dl          = "WRLINUX_10_19_BASE:a2844b5f7c5dae94eb465bef230ea9f29177a4ac"
+wrlinux-ovp-dl       = "WRLINUX_10_19_BASE:95429dc29cb0a4b21dd020ad0bfbedd3cc37710c"
+meta-cgl-common-dl   = "WRLINUX_10_19_BASE:8719215aab8b414680f2925acd8e118cdbcbacdd"
+wrlinux-cgl-dl       = "WRLINUX_10_19_BASE:925391802baf885ab2974641aa0482fb0ede065f"
+meta-intel-dl        = "WRLINUX_10_19_BASE:e3f6648b2323e773fe38d7990e275170a71e902d"
+meta-dpdk-dl         = "WRLINUX_10_19_BASE:be2537071fb3ce4d66094247f48ff6ede6f5f7cd"
+meta-intel-qat-dl    = "WRLINUX_10_19_BASE:974865e8a4524e42870f94cfac3176f26cbcef67"
+meta-anaconda-dl     = "WRLINUX_10_19_BASE:8206668ebb4c770986ca240df94476e1dd2747f6"
+intel-socfpga-dl     = "WRLINUX_10_19_BASE:2b355b2b7d6153321e6638a9d8ca6ad3021c3f25"
+meta-signing-key-dl  = "WRLINUX_10_19_BASE:a975621a347600649affcd8e8a98d095e7259be2"
+meta-overc-dl        = "WRLINUX_10_19_BASE:f755bbbb26f1b0f114090a2ca4234ba5ac59b8c6"
+xilinx-zynqmp-dl     = "WRLINUX_10_19_BASE:b9f99c670e3f0bf329818371f580570ea229c794"
+wr-ostree-dl         = "WRLINUX_10_19_BASE:44a4be283260ebca4e27447cb5f7f6b37dc202a0"
+meta-security-compliance-dl = "WRLINUX_10_19_BASE:c3fe827715af6427bf33da475853935f4219b765"
+meta-openssl102-dl   = "WRLINUX_10_19_BASE:bda809ad0d5bf71e3789c934c76ffe6edc12c758"
+meta-openssl102-fips-dl = "WRLINUX_10_19_BASE:56d65f6d3d9cd68d9d64c5284ee2f04493f2d111"
+meta-cloud-services-dl-3.0 = "WRLINUX_10_19_BASE:56b6547b2a2f2536d88d9bb09f2eb43199103459"
+meta-gplv2-dl-3.0    = "WRLINUX_10_19_BASE:e72b3a85d93e330a253ccbceda011ee166adb4a0"
+meta-openstack-dl-3.0 = "WRLINUX_10_19_BASE:5331b2e72ea786aa822366b6a03f8211c13edde9"
+meta-realtime-dl-3.0 = "WRLINUX_10_19_BASE:4a3c4ec75b261b7512ea897060a8ee7c0436f789"
+meta-virtualization-dl-3.0 = "WRLINUX_10_19_BASE:31c5c18b452808d0544a0c8164f58dd03b83c2f5"
+oe-core-dl-3.0       = "WRLINUX_10_19_BASE:14612de2971dc561354c611271bb1f663c0c2739"
+meta-filesystems-dl-3.0 = "WRLINUX_10_19_BASE:8240c0d610db7b062ff3c60df1733cdb94efbcb8"
+meta-gnome-dl-3.0    = "WRLINUX_10_19_BASE:56944e3663e797f2ccc06628ae357538ee9d8a3d"
+meta-initramfs-dl-3.0 = "WRLINUX_10_19_BASE:942a644c480deeebabdb584bf2044bc2e5a53fd4"
+meta-multimedia-dl-3.0 = "WRLINUX_10_19_BASE:57b1c1084fca3151cf649262eebc1b42d240fb95"
+meta-networking-dl-3.0 = "WRLINUX_10_19_BASE:30d5c0fb44c9f85e51e0f7614aeb30f3af489e28"
+meta-oe-dl-3.0       = "WRLINUX_10_19_BASE:01ae5f73b82359959720b3999bba8702c834fc6d"
+meta-perl-dl-3.0     = "WRLINUX_10_19_BASE:9d350fa1c32a794098ed6feae036d797ea31a0ae"
+meta-python-dl-3.0   = "WRLINUX_10_19_BASE:ae1c742abd3aefe965cf627e5266b7d388aba805"
+meta-webserver-dl-3.0 = "WRLINUX_10_19_BASE:39103b8da30a6831f30b6f2eb4649d1eb642a276"
+meta-xfce-dl-3.0     = "WRLINUX_10_19_BASE:320c5c4c51351fdb7bd96a01092bd54fef5175c6"
+bcm-2xxx-rpi-dl      = "WRLINUX_10_19_BASE:f5f7968d1361b9f40e3343b590497a78990ed70c"
+local                = "master:fd89d46bb9a53327d0efaab02bdff60d239c8d16"
